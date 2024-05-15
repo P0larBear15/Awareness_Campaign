@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awereness Campaign</title>
+    <link rel="stylesheet" href="./styling/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Safe or not safe?</h1>
+        <h2>Vraag 3</h2>
+        <h3>Welke mail is volgens jou veilig?</h3>
+        <div class="question">
+            <div class="clickable" href="#Modal1">
+                <h2 class="clickable" href="#Modal1">Afbeelding 1</h2>
+                <img class="clickable" href="#Modal1" src="img/vraag-4-b.png" alt="Afbeelding 1">
+            </div>
+            <div class="clickable" href="#Modal2">
+                <h2 class="clickable" href="#Modal2">Afbeelding 2</h2>
+                <img class="clickable" href="#Modal2" src="img/vraag-4-a.png" alt="Afbeelding 2">
+            </div>
+        </div>
+
+        <div class="answers">
+          <!-- Modal -->
+          <div id="Modal1" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content-correct">
+              <div clas="modal-header">
+                <h2>Afbeelding 1</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-4-a.png" alt="Afbeelding 2">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Deze mail is wel veilig. Geen links, geen oproepen om iets te doen, gekende afzender, enkel een pdf als bewijs.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="vraag4.html">Volgende Vraag</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="Modal2" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content-wrong">
+              <div clas="modal-header">
+                <h2>Afbeelding 2</h2>
+                <h3>Deze mail is niet veilig!</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-4-b.png" alt="Afbeelding 1">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Deze mail is niet veilig. Let hierbij goed op de spelfouten (vandag, foute grammatica, helemal).
+                      Ook wordt er gevraagd om de afwezigheid via een vreemde link te accepteren. Let goed op de URL, en de extensie.
+                      Dit is een russische website met een login pagina.
+                    </p>
+                    <p>
+                      Let ook goed op de afzender, nancyvdv@dewaiburg.be ipv nancyvandevelde@dewaaiburg.be.
+                    </p>
+                  </div>
+                </div>
+                <button class="modal-button btn-in-modal" href="#Modal3">Klik hier voor het juiste antwoord.</button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="Modal3" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content-correct">
+              <div clas="modal-header">
+                <h2>Afbeelding 1</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-4-a.png" alt="Afbeelding 2">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Deze mail is wel veilig. Geen links, geen oproepen om iets te doen, gekende afzender, enkel een pdf als bewijs.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="vraag4.html">Volgende Vraag</a></button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <button class="navigeer"><a href="vraag2.html">Terug</a></button>
+        <button class="navigeer"><a href="vraag4.html">Volgende</a></button>
+        
+      </div>
+      <script src="scripts/script.js"></script>
+</body>
+</html>

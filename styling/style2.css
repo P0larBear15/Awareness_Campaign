@@ -1,0 +1,7 @@
+.question div {
+  height:320px;
+}
+
+.image-container {
+  flex: 0 0 40%;
+}

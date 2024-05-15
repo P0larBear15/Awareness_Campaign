@@ -1,0 +1,234 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/img/achtergrondimg.jpg'); 
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .footer {
+    text-align:right;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap:wrap
+  }
+
+  .question div{
+    width:45%;
+    border-radius:10px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    background-color:#f2f2f2;
+    margin: 4px;
+  }
+
+  div.clickable{
+    transition: background-color 0.5s, transform 0.5s ease;
+  }
+
+  div.clickable:hover{
+    background-color:#d2d2d2;
+    transform: scale(1.025);
+  }
+
+  .question div img {
+    width:300px;
+    height:auto;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    margin:15px;
+  }
+
+  .image-with-text, .image-shower{
+    display: flex;
+    flex-direction:row;
+    margin-bottom:10px;
+  }
+  
+  .image-container {
+    flex: 0 0 20%;
+    position: relative;
+  }
+  
+  .image-container img, .image-shower-content img{
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio of the image */
+    display: block; /* Removes bottom margin/gap */
+    border-radius:20px;
+    border: 2px solid #555;
+  }
+  
+  .image-shower-content{
+    flex: 0 0 100%;
+    position:relative;
+  }
+
+  .text-container {
+    flex: 1; /* Takes remaining space */
+    padding-left: 20px; /* Adds some space between the image and the text */
+    text-align:start;
+  }
+  
+  .answers button {
+    padding: 10px 20px;
+    margin: 0 5px 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.5s;
+  }
+
+  .answers button:hover{
+    background-color: rgb(68, 68, 206);
+    color: white;
+  }
+
+  .navigeer{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: rgb(49, 94, 94);
+    transition: background-color 0.5s;
+  }
+
+  .navigeer:hover{
+    background-color: rgb(75, 199, 199);
+  }
+
+  .navigeer a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .btn-in-modal{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .btn-in-modal a{
+    text-decoration: none;
+    color: black;
+  }
+
+/*  Hier start de modal content  */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-large {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content-default-large {
+    position: relative;
+    background-color: #8b8b8b;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius:20px;
+    width:75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .modal-content-default-medium {
+    position: relative;
+    background-color: #8b8b8b;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius:20px;
+    width:60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  .modal-content-correct {
+    position: relative;
+    background-color: #7cca8d;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius:20px;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .modal-content-wrong {
+    position: relative;
+    background-color: #c93737;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius:20px;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .modal-body {padding: 2px 16px;}
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #8b8b8b;
+    color: white;
+  }

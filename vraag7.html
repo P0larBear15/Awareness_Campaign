@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness Campaign</title>
+    <link rel="stylesheet" href="./styling/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Safe or not safe?</h1>
+        <h2>Vraag 7</h2>
+        <h3>Is deze mail veilig of niet?</h3>
+        <div class="question">
+          <div>
+            <h2>Afbeelding 1</h2>
+            <img src="img/veilig-onveilig-3.png" alt="Afbeelding 1">
+          </div>
+        </div>
+
+        <div class="answers">
+
+          <!-- Modal Button -->
+          <button class="modal-button" href="#Modal1">Veilig</button>
+          
+          <!-- Modal -->
+          <div id="Modal1" class="modal">
+
+            <!-- Modal Content -->
+            <div class="modal-content-wrong">
+              <div clas="modal-header">
+                <h2>Veilig</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/veilig-onveilig-3.png" alt="Afbeelding 1">
+                  </div>
+                  <div class="text-container">
+                    <p>Dit is fout want zus en zo</p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="end.html">Einde Quiz</a></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Button -->
+          <button class="modal-button" href="#Modal2">Onveilig</button>
+          
+          <!-- Modal -->
+          <div id="Modal2" class="modal">
+
+            <!-- Modal Content -->
+            <div class="modal-content-correct">
+              <div clas="modal-header">
+                <h2>Onveilig</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/veilig-onveilig-3.png" alt="Afbeelding 1">
+                  </div>
+                  <div class="text-container">
+                    <p>Dit is fout want zus en zo</p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="end.html">Einde Quiz</a></button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <button class="navigeer"><a href="vraag6.html">Terug</a></button>
+        <button class="navigeer"><a href="end.html">Einde Quiz</a></button>
+        
+      </div>
+      <script src="scripts/script.js"></script>
+</body>
+</html>

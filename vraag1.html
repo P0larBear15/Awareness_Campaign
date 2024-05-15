@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awereness Campaign</title>
+    <link rel="stylesheet" href="./styling/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Safe or not safe?</h1>
+        <h2>Vraag 1</h2>
+        <h3>Welke mail is volgens jou veilig?</h3>
+        <div class="question">
+          <div class="clickable" href="#Modal1">
+            <h2 class="clickable" href="#Modal1">Afbeelding 1</h2>
+            <img class="clickable" href="#Modal1" src="img/vraag-1-a.png" alt="Afbeelding 1">
+          </div>
+          <div class="clickable" href="#Modal2">
+            <h2 class="clickable" href="#Modal2">Afbeelding 2</h2>
+            <img class="clickable" href="#Modal2" src="img/vraag-1-b.png" alt="Afbeelding 2">
+          </div>
+        </div>
+        <div class="answers">
+
+          <!-- Modal -->
+          <div id="Modal1" class="modal">
+
+            <!-- Modal Content -->
+            <div class="modal-content-wrong">
+              <div clas="modal-header">
+                <h2>Afbeelding 1</h2>
+                <h3>Deze mail is niet veilig!</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-1-a.png" alt="Afbeelding 1">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Deze mail is een vorm van phishing.
+                      Je kan dit herkennen aan het email adres (ElkevDael ipv. elkevandael) en het opdringerig taalgebruik.
+                      Ook gebruikt men een foute schrijfwijze van ‘factuur’.
+                    </p>
+                    <p>
+                      Ook staat het bedrag en het rekeningnummer vermeld in de email.
+                      Dit zou normaal nooit het geval mogen zijn, aangezien dit vermeld staat op de factuur.
+                    </p>
+                    <p>
+                      De oplichter probeert ervoor te zorgen dat jij een bedrag overmaakt op zijn bankrekening.
+                    </p>
+                  </div>
+                </div>
+                <button class="modal-button btn-in-modal" href="#Modal3">Klik hier voor het juiste antwoord.</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Modal -->
+          <div id="Modal2" class="modal">
+
+            <!-- Modal Content -->
+            <div class="modal-content-correct">
+              <div clas="modal-header">
+                <h2>Afbeelding 2</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-1-b.png" alt="Afbeelding 2">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Veilig. Geen oproepen om iets te doen, gekende afzender, enkel de factuur in pdf formaat.
+                      Het bedrag en rekeningnummer zullen hier op vermeld staan, niet in de email.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="vraag2.html">Volgende Vraag</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="Modal3" class="modal">
+
+            <!-- Modal Content -->
+            <div class="modal-content-correct">
+              <div clas="modal-header">
+                <h2>Afbeelding 2</h2>
+                <h3>Deze mail is wel veilig</h3>
+              </div>
+              <div class="modal-body">
+                <div class="image-with-text">
+                  <div class="image-container">
+                    <img src="img/vraag-1-b.png" alt="Afbeelding 2">
+                  </div>
+                  <div class="text-container">
+                    <p>
+                      Veilig. Geen oproepen om iets te doen, gekende afzender, enkel de factuur in pdf formaat.
+                      Het bedrag en rekeningnummer zullen hier op vermeld staan, niet in de email.
+                    </p>
+                  </div>
+                </div>
+                <button class="btn-in-modal"><a href="vraag2.html">Volgende Vraag</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button class="navigeer"><a href="vraag2.html">Volgende</a></button>
+      </div>
+      <script src="scripts/script.js"></script>
+</body>
+</html>
