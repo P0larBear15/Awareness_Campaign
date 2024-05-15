@@ -2,17 +2,36 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/img/achtergrondimg.jpg'); 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
   }
   
   .container {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+    position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  width: 250px; /* Adjust as needed */
+  height: auto;
+  z-index: 1000; /* Add this line */
+}
+
+
 
   .footer {
-    text-align:right;
+    margin-top: auto;
+    padding-bottom: 1rem;
+    text-align: center;
   }
   
   .question {
@@ -23,7 +42,7 @@
   }
 
   .question div{
-    width:45%;
+    padding: 10px;
     border-radius:10px;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
     background-color:#f2f2f2;
@@ -86,7 +105,7 @@
   }
 
   .answers button:hover{
-    background-color: rgb(68, 68, 206);
+    background-color: rgb(167,171,212);
     color: white;
   }
 
@@ -96,12 +115,13 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 7px;
-    background-color: rgb(49, 94, 94);
+    
+    background-color: rgb(51,75,148);
     transition: background-color 0.5s;
   }
 
   .navigeer:hover{
-    background-color: rgb(75, 199, 199);
+    background-color: rgb(167,171,212);
   }
 
   .navigeer a{
@@ -182,7 +202,7 @@
     position: relative;
     background-color: #7cca8d;
     margin: auto;
-    padding: 0;
+    padding: 20;
     border: 1px solid #888;
     border-radius:20px;
     width: 50%;
@@ -192,12 +212,13 @@
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
+    
   }
   .modal-content-wrong {
     position: relative;
-    background-color: #c93737;
+    background-color: #da5151;
     margin: auto;
-    padding: 0;
+    padding: 20;
     border: 1px solid #888;
     border-radius:20px;
     width: 50%;
