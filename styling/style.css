@@ -14,16 +14,16 @@
     align-items: center;
     min-height: 100vh;
     position: relative;
-}
+  }
 
-.logo {
-  position: absolute;
-  top: 10px; /* Adjust as needed */
-  left: 10px; /* Adjust as needed */
-  width: 250px; /* Adjust as needed */
-  height: auto;
-  z-index: 1000; /* Add this line */
-}
+  .logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
+    height: auto;
+    z-index: 1; /* Add this line */
+  }
 
 
 
@@ -96,7 +96,7 @@
   
   .answers button {
     padding: 10px 20px;
-    margin: 0 5px 10px 5px;
+    margin: 0 5px 20px 5px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 7px;
@@ -109,7 +109,7 @@
   }
 
   .navigeer{
-    margin-top: 20px;
+    margin-bottom:20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -118,6 +118,8 @@
     background-color: rgb(51,75,148);
     transition: background-color 0.5s;
   }
+
+  
 
   .navigeer:hover{
     background-color: rgb(167,171,212);
@@ -139,11 +141,11 @@
     color: black;
   }
 
-/*  Hier start de modal content  */
+  /*  Hier start de modal content  */
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
@@ -157,7 +159,7 @@
   .modal-large {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 50px; /* Location of the box */
     left: 0;
     top: 0;
